@@ -1,0 +1,30 @@
+.skills{
+    color: red;
+    font-weight: bold;
+}
+
+.beizhu{
+    color: burlywood;
+    font-weight: 200;
+}
+
+#touxiang{
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+    color: blue;
+    font-size: 70px;
+}
+
+a:hover{
+    font-size: 60px;
+}
+
+a{
+    transition: all 0.5s ease;
+}
