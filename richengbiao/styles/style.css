@@ -1,0 +1,16 @@
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#richengbiao {
+    background-color: aqua;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+}
