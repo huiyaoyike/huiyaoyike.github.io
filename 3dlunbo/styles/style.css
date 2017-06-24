@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 5000px;
+    perspective-origin: center -800px;
+}
+
+.branch {
+    height: 288px;
+    width: 576px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 60s linear infinite;
+}
+
+.back {
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: contain;
+    transform: rotateY(0) translateZ(600px);
+}
+
+.coco {
+    background-image: url(../images/coco.jpg);
+    background-size: contain;
+    transform: rotateY(60deg) translateZ(600px);
+}
+
+.moon {
+    background-image: url(../images/moon.jpg);
+    background-size: contain;
+    transform: rotateY(120deg) translateZ(600px);
+}
+
+.io {
+    background-image: url(../images/io.jpg);
+    background-size: contain;
+    transform: rotateY(180deg) translateZ(600px);
+}
+
+.roshan {
+    background-image: url(../images/roshan.jpg);
+    background-size: contain;
+    transform: rotateY(240deg) translateZ(600px);
+}
+
+.rubick {
+    background-image: url(../images/rubick.jpg);
+    background-size: contain;
+    transform: rotateY(300deg) translateZ(600px);
+}
+
+.branch .dota {
+    background-image: url(../images/dota.png);
+    background-size: contain;
+    transform: rotateY(0) translateZ(0);
+    background-repeat: no-repeat;
+    animation: none;
+}
+
+.branch:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
