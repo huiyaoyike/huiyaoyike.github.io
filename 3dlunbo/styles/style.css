@@ -76,12 +76,22 @@ html, body {
     transform: rotateY(300deg) translateZ(600px);
 }
 
-.branch .dota {
+.logo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dota {
     background-image: url(../images/dota.png);
     background-size: contain;
-    transform: rotateY(0) translateZ(0);
     background-repeat: no-repeat;
-    animation: none;
+    height: 120px;
+    width: 576px;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
 }
 
 .branch:hover {
