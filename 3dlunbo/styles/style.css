@@ -76,13 +76,6 @@ html, body {
     transform: rotateY(300deg) translateZ(600px);
 }
 
-.logo {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .dota {
     background-image: url(../images/dota.png);
     background-size: contain;
